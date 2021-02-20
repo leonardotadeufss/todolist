@@ -1,0 +1,41 @@
+
+.todo-table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 98%);
+    width: 540px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.task.name{
+    width: 70%;
+    text-align: left;
+}
+
+.task.check{
+    width: 12%;
+}
+
+.task.delete{
+    box-sizing: border-box  ;
+    height: 65px;
+}
+
+.btnDelete{
+        display: inline-block;
+        background-color: hsl(0, 0%, 98%);
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        height: 65px;
+        vertical-align: middle;
+}
+
+.btnDelete svg{
+    height: 20px;
+    color: rgb(158, 11, 11);
+}
