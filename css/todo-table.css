@@ -10,6 +10,11 @@
     vertical-align: middle;
 }
 
+.todo-table.-night{
+    background-color: hsl(235, 24%, 19%);
+    color: #FFF;
+}
+
 tr{
     border-bottom: 1px solid hsla(233, 11%, 84%, 0.425);
 }
@@ -43,4 +48,11 @@ tr{
 .btnDelete svg{
     height: 20px;
     color: rgb(158, 11, 11);
+}
+
+.btnDelete.-night{
+        background-color:  hsl(235, 24%, 19%);
+}
+.btnDelete.-night svg{
+        color: hsl(233, 11%, 84%);
 }

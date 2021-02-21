@@ -5,8 +5,7 @@
     margin-right: auto;
     width: 540px;
     justify-content: space-between;
-    align-items: baseline;
-    
+    align-items: top;
 }
 
 .main-header h1{
@@ -14,5 +13,20 @@
     margin-bottom: 42px;
     font-weight: 600;
     color: #FFF;
+}
+
+
+.main-header .nighticon{
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    background-image: url(../images/icon-moon.svg);
+}
+
+.main-header .nighticon.-night{
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    background-image: url(../images/icon-sun.svg);
 }
 

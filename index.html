@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="css/input-txt.css">
     <link rel="stylesheet" href="css/todo-table.css">
     <link rel="stylesheet" href="css/check-task.css">
+    <link rel="stylesheet" href="css/table-footer.css">
+    <link rel="stylesheet" href="css/action-wrapper.css">
+    <link rel="stylesheet" href="css/main-action.css">
 </head>
-<body>
+<body class="body">
     <div class="main-header">
-        <h1>T O D O</h1>
-       <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg></a>
+        <h1>TO DO</h1>
+       <a class="nighticon"></a>
     </div>
     
     <input type="text" class="input-txt" placeholder="Digite uma nova tarefa">
@@ -35,15 +38,21 @@
 
             <tr class="table-footer">
                 <td class="tableActions" colspan="3">
-                    <a class="main-action itemleft" >0 Items restates</a>
-                    <a class="main-action all"> Todos</a>
-                    <a class="main-action active"> Ativos</a>
-                    <a class="main-action completed"> Completados</a>
-                    <a class="main-action clearall"> Limpar completos</a>
+                    <div class="action-wrapper itens">
+                        <a class="main-action itemleft" >0 Items restates</a>
+                    </div>
+                    <div class="action-wrapper actions">
+                        <a class="main-action all"> Todos</a>
+                        <a class="main-action active"> Ativos</a>
+                        <a class="main-action completed"> Completados</a>
+                    </div>
+                    <div class="action-wrapper clear">
+                        <a class="main-action clearall"> Limpar completos</a>
+                    </div>
                 </td>
             </tr>
     </table>
            
-   
+   <script src="index.js"></script>
 </body>
 </html>

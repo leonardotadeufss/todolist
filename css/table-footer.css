@@ -1,4 +1,4 @@
-.table-footer .main-action.itemleft{
-    display: inline-block;
-    width: 200px;
+.table-footer{
+    border-bottom:none;
+    font-size: 12px;
 }
