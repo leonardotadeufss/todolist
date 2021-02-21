@@ -25,9 +25,12 @@ tr{
     vertical-align: middle;
 }
 
-.task.check{
-    width: 12%;
+.task.name.-completed{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
+
+
 
 .task.delete{
     box-sizing: border-box  ;
