@@ -11,7 +11,9 @@ table.style.transition = "all 0.5s";
 deleteButton.style.transition = "all 0.5s";
 
 nightIcon.addEventListener("click", changeMode);
-
+input.addEventListener('keypress', function(e) {
+    addNewTask(e);
+});
 
 
 
@@ -22,4 +24,12 @@ function changeMode() {
     input.classList.toggle("-night");
     table.classList.toggle("-night")
     deleteButton.classList.toggle("-night")
+}
+
+function addNewTask(e) {
+    if (e.keyCode === 13) {
+        input.value=""
+    } else {
+        
+    }
 }
