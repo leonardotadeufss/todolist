@@ -1,0 +1,7 @@
+.body{
+    background-color: hsl(236, 33%, 92%);
+}
+
+.body.-night{
+    background-color: hsl(235, 21%, 11%);
+}

@@ -4,10 +4,11 @@ const input = document.querySelector('.input-txt')
 const todoTable = document.querySelector('.todo-table')
 const tableFooter = document.querySelector('.table-footer')
 const tablebody = document.querySelector('.tablebody')
+const bgImage = document.querySelector('.background-image')
 var deleteButton = document.querySelectorAll('.btnDelete')
 
 
-body.style.transition = "all 0.8s";
+body.style.transition = "all 0.5s";
 input.style.transition = "all 0.5s";
 todoTable.style.transition = "all 0.5s";
 
@@ -31,6 +32,7 @@ function changeMode() {
     body.classList.toggle("-night");
     input.classList.toggle("-night");
     todoTable.classList.toggle("-night")
+    bgImage.classList.toggle("-night")
 }
 
 function addNewTask(e) {

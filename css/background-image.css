@@ -1,13 +1,14 @@
-.body{
-    background-color: hsl(236, 33%, 92%);
+.background-image{
+    height: 270px;
+    width: 100%;
     background-image: url(../images/bg-desktop-light.jpg);
-    background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    position: absolute;
+    z-index:  -1;
 }
 
-.body.-night{
-    background-color: hsl(235, 21%, 11%);
+.background-image.-night{
     background-image: url(../images/bg-desktop-dark.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
 }
