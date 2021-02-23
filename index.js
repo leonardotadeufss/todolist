@@ -93,3 +93,25 @@ function completetask(object) {
    
 }
 
+function tableAction(e){
+    switch (e.target.classList[1]) {
+        case "all":
+            showTasks(all)
+            break;
+        case "active":
+            showTasks(active)
+            break;
+        case "completed":
+            showTasks(completed)
+            break;
+
+        case "clearall":
+            let completed = document.querySelectorAll('.completedTask')
+            completed.forEach(task => {
+                removeTask(task.firstChild)
+            });
+            break;
+        default:
+            break;
+    }
+}
