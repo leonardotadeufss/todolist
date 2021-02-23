@@ -20,6 +20,12 @@ tr{
     border-bottom: 1px solid hsla(233, 11%, 84%, 0.425);
 }
 
+.hidden{
+    display: none;
+}
+
+
+
 .task.name{
     width: 70%;
     text-align: left;
@@ -60,3 +66,4 @@ tr{
 .btnDelete.-night svg{
         color: hsl(233, 11%, 84%);
 }
+

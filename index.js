@@ -51,6 +51,7 @@ function addNewTask(e) {
         let name = document.createElement("td");
         let btn = document.createElement("td");
 
+        row.className = "visible"
         check.className = "task check";
         name.className = "task name";
         btn.className = "task delete";
@@ -96,17 +97,17 @@ function completetask(object) {
 function tableAction(e){
     switch (e.target.classList[1]) {
         case "all":
-            showTasks(all)
+            showTasks("all")
             break;
         case "active":
-            showTasks(active)
+            showTasks("active")
             break;
         case "completed":
-            showTasks(completed)
+            showTasks("completed")
             break;
 
         case "clearall":
-            let completed = document.querySelectorAll('.completedTask')
+            const completed = document.querySelectorAll('.completedTask')
             completed.forEach(task => {
                 removeTask(task.firstChild)
             });
@@ -114,4 +115,34 @@ function tableAction(e){
         default:
             break;
     }
+}
+
+function showTasks(string) {
+    const activeTask = document.querySelectorAll('.visible')
+    const completed = document.querySelectorAll('.completedTask')
+    if (string == "all") {
+        tablebody.childNodes.forEach(element => {
+            element.classList.remove('hidden')
+
+        });
+        
+    } else if (string == "active") {
+        tablebody.childNodes.forEach(element => {
+            if (element.classList.contains('completedTask')) {
+                element.classList.add('hidden')
+            } else {
+                element.classList.remove('hidden')
+            }
+        })
+    }else if (string == "completed"){
+        tablebody.childNodes.forEach(element => {
+            element.classList.add('hidden')
+
+        });
+        completed.forEach(element => {
+            element.classList.remove('hidden')
+        });
+    }
+    
+
 }
