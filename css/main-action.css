@@ -1,5 +1,10 @@
 .main-action{
     display: inline-flex;
+    cursor: pointer;
     padding: 0px 5px;
+}
+
+.main-action.itemleft{
+    cursor: default;
 }
 

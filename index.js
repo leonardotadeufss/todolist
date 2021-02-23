@@ -5,7 +5,9 @@ const todoTable = document.querySelector('.todo-table')
 const tableFooter = document.querySelector('.table-footer')
 const tablebody = document.querySelector('.tablebody')
 const bgImage = document.querySelector('.background-image')
+const mainAction = document.querySelectorAll('.main-action')
 var deleteButton = document.querySelectorAll('.btnDelete')
+
 
 
 body.style.transition = "all 0.5s";
@@ -17,6 +19,12 @@ input.addEventListener('keypress', function(e) {
     addNewTask(e);
 });
 
+mainAction.forEach(el => {
+    el.addEventListener("click", function(e){
+        tableAction(e)
+    })
+    
+});
 
 
 
@@ -36,7 +44,7 @@ function changeMode() {
 }
 
 function addNewTask(e) {
-    if (e.keyCode === 13 ) {
+    if (e.keyCode === 13 && input.value != "") {
        
         let row = document.createElement("tr");
         let check = document.createElement("td");
@@ -59,9 +67,6 @@ function addNewTask(e) {
 
         tablebody.appendChild(row)
 
-        tablebody.insertBefore(row, tableFooter)
-
-
         input.value=""
         updateTotal()
     }
@@ -75,12 +80,16 @@ function removeTask(object) {
 
 function updateTotal() {
     let itens = document.querySelector('.itemleft');
-    itens.innerText = `${tablebody.rows.length-1} itens restantes`;
+    let completed = document.querySelectorAll('.completedTask')
+    itens.innerText = `${tablebody.rows.length - completed.length} itens restantes`;
 }
 
 function completetask(object) {
    let taskname = object.nextSibling
+   object.parentElement.classList.toggle("completedTask")
    object.firstChild.classList.toggle("-completed")
    taskname.classList.toggle("-completed")
+   updateTotal();
    
 }
+
