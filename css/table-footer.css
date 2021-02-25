@@ -11,3 +11,27 @@
     border-bottom:none;
     font-size: 12px;
 }
+
+.table-footer.-night{
+    background-color: hsl(235, 24%, 19%);
+    color: #FFF;
+    border-bottom: hsl(235, 21%, 11%);
+
+}
+
+@media only screen and (max-width: 420px){
+    .table-footer{
+        width: 300px;
+        line-height: 50px;
+    }
+
+    .table-footer .tableActions{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: inherit;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+  
+}

@@ -12,3 +12,10 @@
 .background-image.-night{
     background-image: url(../images/bg-desktop-dark.jpg);
 }
+
+
+@media only screen and (max-width: 420px){
+    .background-image{
+        height: 180px;
+    }
+}

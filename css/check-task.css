@@ -14,3 +14,14 @@
     background-position: center;
     border: none;
 }
+
+.check-task:focus{
+    outline: none;
+}
+
+
+@media only screen and (max-width: 420px){
+    .check-task{
+        margin-right: 10px;
+    }
+}
