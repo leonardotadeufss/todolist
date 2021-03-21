@@ -13,7 +13,7 @@ Check it out [here](https://leonardotadeufss.github.io/todolist/).
 
 ![Todo List](https://media.giphy.com/media/aMXgqzGKshM58MJJkn/giphy.gif)
 
-![Todo List darkmode](https://media.giphy.com/media/pp4xoD0hSX1MhKYX7m/source.gif)
+![Todo List darkmode](https://media.giphy.com/media/pp4xoD0hSX1MhKYX7m/giphy.gif)
 
 ![Todo App Mobile](https://media.giphy.com/media/hu56DrYZ0updXzCNhC/source.gif)
 
