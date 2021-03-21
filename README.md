@@ -11,7 +11,7 @@ Check it out [here](https://leonardotadeufss.github.io/todolist/).
 
 ## Preview
 
-![Todo App working](https://media.giphy.com/media/zK6WpLGhlbuvP0R8Z5/source.gif)
+![Todo App working](https://media.giphy.com/media/aMXgqzGKshM58MJJkn/source.gif)
 
 ![Todo List darkmode](https://media.giphy.com/media/pp4xoD0hSX1MhKYX7m/source.gif)
 
